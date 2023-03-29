@@ -63,21 +63,21 @@ client.on("message", async (message) => {
   }
 });
 
-client.on("message_create", async(message) => {
+// client.on("message_create", async(message) => {
 
-  try{
-    await client.sendMessage(
-      message.from,
-      "مرحبا، أنا مساعدك الذكي! مطور من طرف راشد المنصوري  بإمكاني الإجابة على أسئلتك، تقديم المعلومات التي تحتاجها، و لا تتردد في سؤالي أي شيء تريده، وسأحاول الإجابة عليك بأسرع وقت ممكن."
-    );
-    // await client.sendMessage(
-    //   message.from,
-    //     "https://www.instagram.com/r49/?igshid=YmMyMTA2M2Y%3D"
-    // );
-  } catch(error){
-    console.error(error);
-  }
-});
+//   try{
+//     await client.sendMessage(
+//       message.from,
+//       "مرحبا، أنا مساعدك الذكي! مطور من طرف راشد المنصوري  بإمكاني الإجابة على أسئلتك، تقديم المعلومات التي تحتاجها، و لا تتردد في سؤالي أي شيء تريده، وسأحاول الإجابة عليك بأسرع وقت ممكن."
+//     );
+//     // await client.sendMessage(
+//     //   message.from,
+//     //     "https://www.instagram.com/r49/?igshid=YmMyMTA2M2Y%3D"
+//     // );
+//   } catch(error){
+//     console.error(error);
+//   }
+// });
 
 client.initialize();
 
