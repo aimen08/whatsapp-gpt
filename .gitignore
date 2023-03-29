@@ -1,6 +1,7 @@
 node_modules/
 dist/
 .env
+.wwebjs_auth/
 
 # managed by open-wa
 **.data.json
