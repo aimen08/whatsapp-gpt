@@ -17,7 +17,9 @@ import qrcode from "qrcode-terminal";
 //   ),
 // ]);
 
-const client = new wp.Client({ authStrategy: new wp.LocalAuth() });
+const client = new wp.Client({ authStrategy: new wp.LocalAuth(),puppeteer: {
+		args: ['--no-sandbox'],
+	}});
 
 client.on("qr", (qr) => {
   try {
